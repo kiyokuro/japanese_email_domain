@@ -6,31 +6,31 @@ RSpec.describe JapaneseEmailDomain do
   describe 'validate' do
     let!(:email){ JapaneseEmailDomain::Validator.new(param) }
 
-    context 'when blank invalid' do
+    context 'when blank email' do
       let(:param){ ' ' }
       it { expect(email.valid?).to eq false }
     end
-    context 'when not has @ invalid' do
+    context 'when not has "@" email' do
       let(:param){ 'japanese.com' }
       it { expect(email.valid?).to eq false }
     end
-    context 'when not has account part to invalid' do
+    context 'when not has account part email' do
       let(:param){ '@docomo.ne.jp' }
       it { expect(email.valid?).to eq false }
     end
-    context 'when correct docomo email to vaild' do
+    context 'when correct docomo email' do
       let(:param){ 'japanese@docomo.ne.jp' }
       it { expect(email.valid?).to eq true }
     end
-    context 'when correct au email to vaild' do
+    context 'when correct au email' do
       let(:param){ 'japanese@ezweb.ne.jp' }
       it { expect(email.valid?).to eq true }
     end
-    context 'when correct softbank email to vaild' do
+    context 'when correct softbank email' do
       let(:param){ 'japanese@softbank.ne.jp' }
       it { expect(email.valid?).to eq true }
     end
-    context 'when correct softbank iphone email to vaild' do
+    context 'when correct softbank iphone email' do
       let(:param){ 'japanese@i.softbank.jp' }
       it { expect(email.valid?).to eq true }
     end
