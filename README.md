@@ -22,7 +22,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Accepts email address of docomo, au, softbank and softbank's iphone.
+`JapaneseEmailDomain::Validator.new('hogehoge@docomo.ne.jp')` is be true
+`JapaneseEmailDomain::Validator.new('hogehoge@att.net')` is be false`
 
 ## Development
 
@@ -32,7 +34,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/japanese_email_domain. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/kiyokuro/japanese_email_domain. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
