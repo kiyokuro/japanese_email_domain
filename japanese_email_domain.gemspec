@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "Validate whether it is japanese email domain"
   spec.description   = ""
-  spec.homepage      = "https://github.com/kiyokuro/japanese_eamil_domain"
+  spec.homepage      = "https://github.com/kiyokuro/japanese_email_domain"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
